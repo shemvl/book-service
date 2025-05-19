@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Test BookService</title>
+</head>
+
+<body>
+
+<h1>Добавить книгу</h1>
+<form onsubmit="addBook();return false;">
+    <label>Название:
+        <input type="text" id="title" required>
+    </label><br>
+    <label>Описание:
+        <input type="text" id="description">
+    </label><br>
+    <label>Ссылка на картинку:
+        <input type="text" id="imageLink">
+    </label><br>
+    <button type="submit">Добавить</button>
+</form>
+
+<h1>Получить все книги</h1>
+<button onclick="getAllBooks()">Показать список</button>
+
+<h2>Результат</h2>
+<pre id="output" style="background:#eee;padding:10px;"></pre>
+
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
+
